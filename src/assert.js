@@ -38,7 +38,7 @@ var assert = {
 	has(obj, ...keys) {
 		for (let i=0, len=keys.length; i<len; i++) {
 			if (!has(obj, keys[i])) {
-				assertFailed(`Object does not have key=${k}`)
+				assertFailed(`Object does not have key=${keys[i]}`)
 			}
 		}
 
