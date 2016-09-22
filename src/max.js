@@ -14,7 +14,7 @@ export default function max(array, iteratee=identity) {
 		value = array[index];
 		computed = iteratee(value);
 
-		result = computed > result ?computed :result;
+		result = result===undefined || computed > result ?value :result;
 	}
 
 	return result;
