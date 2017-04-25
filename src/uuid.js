@@ -6,9 +6,9 @@ import uuid from "uuid";
 
 	@param {string} [sep="-"] - the UUID segment separator.
 */
-export default function uuid(sep) {
+export default function akuuid(sep) {
 	if (sep) {
-		return uuid()..replace(/-/g, sep);
+		return uuid().replace(/-/g, sep);
 	} else {
 		return uuid();
 	}
